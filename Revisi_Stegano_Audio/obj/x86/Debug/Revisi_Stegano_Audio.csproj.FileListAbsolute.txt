@@ -1,0 +1,28 @@
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\bin\Debug\Revisi_Stegano_Audio.exe
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\bin\Debug\Revisi_Stegano_Audio.pdb
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.Properties.Resources.resources
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.exe
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.pdb
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.FrmOption.resources
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.FrmEmbedding.resources
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Interop.WMPLib.dll
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.csproj.ResolveComReference.cache
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.FrmExtraction.resources
+D:\= H4aNDs0M3 =\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.Dialog.DialogSettingAES.resources
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Interop.WMPLib.dll
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.csproj.ResolveComReference.cache
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.exe
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.pdb
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\bin\Debug\Revisi_Stegano_Audio.exe
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\bin\Debug\Revisi_Stegano_Audio.pdb
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.Dialog.DialogSettingAES.resources
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.FrmEmbedding.resources
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.FrmExtraction.resources
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.UI.FrmOption.resources
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\Revisi_Stegano_Audio.Properties.Resources.resources
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\= Jamban Data =\Kuliah\5th Semester\Tugas Akhir\Tugas Akhir\Program\Revisi_Stegano_Audio\Revisi_Stegano_Audio\obj\x86\Debug\GenerateResource.write.1.tlog

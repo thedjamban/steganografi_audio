@@ -1,0 +1,8 @@
+#keySize
+128
+#salt
+5tr45tr45tr45tr4
+#paddingMode
+ANSIX923
+#cipherMode
+CBC

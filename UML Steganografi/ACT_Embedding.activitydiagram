@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7cb4a50f-926e-4d53-8642-a5856032a621" name="Embedding" linkedPackageId="27f6a00d-3c4f-4f25-a70f-339d5b493191" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="05d6c756-c799-493e-8f58-831c40777b8a" name="Embedding" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="5830585f-cb44-4b73-b015-4555bf12b7b2" />
+        <nodes>
+          <initialNode Id="ba3436e0-3634-4338-a8e8-4679fb95bda1" name="Initial1" isLeaf="false">
+            <elementDefinition Id="32d44d5d-8f78-4702-86f5-6cf5eeb2498c" />
+            <flowNodeTargets>
+              <controlFlow Id="bec05391-9039-48aa-9752-a640e27345f3" isLeaf="false">
+                <opaqueActionMoniker Id="2bd56268-7eec-4195-93b9-cbe1db65d0c7" LastKnownName="Melakukan persiapan proses embedding data" />
+                <elementDefinition Id="f5ddd8dd-4a9a-45b7-bbb9-3f0fcc2cab69" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="2bd56268-7eec-4195-93b9-cbe1db65d0c7" name="Melakukan persiapan proses embedding data" isLeaf="false">
+            <elementDefinition Id="c596032d-4cc0-4a04-9abe-f5a85f521ce8" />
+            <flowNodeTargets>
+              <controlFlow Id="2112acc1-875c-4b1c-99fa-f8cd75672862" isLeaf="false">
+                <forkNodeMoniker Id="81600cde-9878-40b2-b450-f020e582a7d5" LastKnownName="Fork1" />
+                <elementDefinition Id="8df66320-8dc0-47ef-a0aa-a991e6f31f16" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="81600cde-9878-40b2-b450-f020e582a7d5" name="Fork1" isLeaf="false">
+            <elementDefinition Id="3aba403e-9e24-4dcf-990a-374587749d94" />
+            <flowNodeTargets>
+              <controlFlow Id="22850ecb-fc23-48d4-9600-233c782dbeb7" isLeaf="false">
+                <opaqueActionMoniker Id="dabb6a05-bffa-429f-bf0d-1ee48f910836" LastKnownName="Memilih lokasi destinasi stegofile" />
+                <elementDefinition Id="537b0b12-85cb-4dd7-b372-a67a4a805c0d" />
+              </controlFlow>
+              <controlFlow Id="e7c17c79-0857-401c-b290-3a3204abe8f4" isLeaf="false">
+                <opaqueActionMoniker Id="750dba44-311e-47de-a80b-48a5075eaf8b" LastKnownName="Memilih file pesan teks/gambar" />
+                <elementDefinition Id="74742891-1d16-4178-9ff8-d6ff31c951d9" />
+              </controlFlow>
+              <controlFlow Id="7ef92171-f833-4bad-9acb-0d8b8416ec36" isLeaf="false">
+                <opaqueActionMoniker Id="01c1d3c9-4658-407c-9848-ecb2f993be16" LastKnownName="Memilih file media penampung MP3" />
+                <elementDefinition Id="3e2ae82c-d1db-4b55-befb-5dfb6d0fdd6d" />
+              </controlFlow>
+              <controlFlow Id="66adf7f6-4364-43d0-a3ce-4d5b9981a330" isLeaf="false">
+                <opaqueActionMoniker Id="796b1505-7c18-4add-91b7-d9bfe6584afa" LastKnownName="Memasukkan password" />
+                <elementDefinition Id="7fadb927-6393-4e95-a7d4-76137504183a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="750dba44-311e-47de-a80b-48a5075eaf8b" name="Memilih file pesan teks/gambar" isLeaf="false">
+            <elementDefinition Id="6b859949-bea0-4e7c-b2ca-f95715dd0398" />
+            <flowNodeTargets>
+              <controlFlow Id="4377fcd6-e9b5-4635-ac1d-304a8b7a60b6" isLeaf="false">
+                <joinNodeMoniker Id="65bf774c-f8d9-4e64-8ced-2b5b0b91343a" LastKnownName="Join1" />
+                <elementDefinition Id="a47828c3-75b5-4b53-96ca-686c37a35479" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dabb6a05-bffa-429f-bf0d-1ee48f910836" name="Memilih lokasi destinasi stegofile" isLeaf="false">
+            <elementDefinition Id="889bcb11-9023-42a5-9b82-1b67e95c8703" />
+            <flowNodeTargets>
+              <controlFlow Id="ba38dd51-7da4-4d8d-84b5-08cc44280045" isLeaf="false">
+                <joinNodeMoniker Id="65bf774c-f8d9-4e64-8ced-2b5b0b91343a" LastKnownName="Join1" />
+                <elementDefinition Id="9e660cdd-1530-4188-9c2f-53ee68e951f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="01c1d3c9-4658-407c-9848-ecb2f993be16" name="Memilih file media penampung MP3" isLeaf="false">
+            <elementDefinition Id="06e91258-3827-4c8a-b472-a771d6734293" />
+            <flowNodeTargets>
+              <controlFlow Id="77c37a1f-f36a-48e9-ad67-45e05b8eae8e" isLeaf="false">
+                <joinNodeMoniker Id="65bf774c-f8d9-4e64-8ced-2b5b0b91343a" LastKnownName="Join1" />
+                <elementDefinition Id="29a1e615-47fc-4f66-ac6e-53fcd20ec9d8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="65bf774c-f8d9-4e64-8ced-2b5b0b91343a" name="Join1" isLeaf="false">
+            <elementDefinition Id="a056d81a-b6b3-4ce4-b3d6-7136b5641ace" />
+            <flowNodeTargets>
+              <controlFlow Id="5979187a-9730-4cfc-a392-cccfe49891c5" isLeaf="false">
+                <opaqueActionMoniker Id="b04d01a9-5855-45b1-b594-9c50bfaf6a82" LastKnownName="Validasi" />
+                <elementDefinition Id="b6ff113f-f96e-487a-99ef-a9b75c5eff1d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="796b1505-7c18-4add-91b7-d9bfe6584afa" name="Memasukkan password" isLeaf="false">
+            <elementDefinition Id="ae62b5db-103c-4254-990c-0de2693ed236" />
+            <flowNodeTargets>
+              <controlFlow Id="087f1f1a-b982-49cf-8036-85252c0eec06" isLeaf="false">
+                <joinNodeMoniker Id="65bf774c-f8d9-4e64-8ced-2b5b0b91343a" LastKnownName="Join1" />
+                <elementDefinition Id="3de60f23-3e28-4de9-901d-54ae9ac9bd88" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="750d25d6-db54-4b30-ad8c-3fef8584e030" name="Menghitung ukuran file pesan teks/gambar" isLeaf="false">
+            <elementDefinition Id="affccc65-2cc7-44f0-b764-a2fb638fd9fb" />
+            <flowNodeTargets>
+              <controlFlow Id="a8fb85e3-baf2-4096-bf0f-ed5d2cf8ef43" isLeaf="false">
+                <joinNodeMoniker Id="cf8137c5-295a-422a-a660-f9c2623f6d5c" LastKnownName="Join3" />
+                <elementDefinition Id="8d1364d6-0ee7-416e-b5c7-6cddb3d6b469" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="659b0b59-7c4a-4dd4-bce7-a2dd72cadb01" name="Menghitung ukuran file media penampung MP3" isLeaf="false">
+            <elementDefinition Id="3b4fc453-8fe6-4cee-b385-4cb252bb11b0" />
+            <flowNodeTargets>
+              <controlFlow Id="d0052ba5-7467-4620-9131-855b434bdfa5" isLeaf="false">
+                <joinNodeMoniker Id="cf8137c5-295a-422a-a660-f9c2623f6d5c" LastKnownName="Join3" />
+                <elementDefinition Id="aa057e50-85fb-4177-b660-de98fcf41b68" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8b18f7e4-b66c-4ed8-b146-eacb2e24a3c1" name="Cek validasi file pesan dan media" isLeaf="false">
+            <elementDefinition Id="c2053e0b-725c-4e91-a44d-29a2f83efb57" />
+            <flowNodeTargets>
+              <controlFlow Id="7b12df94-5fb5-4901-b6ec-26ae656cf263" isLeaf="false">
+                <forkNodeMoniker Id="7fb44e06-6efc-43ef-9e2d-07f742c65b0b" LastKnownName="Fork2" />
+                <elementDefinition Id="1a47bda1-d020-4b64-8ffa-ccace2b6809f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="7fb44e06-6efc-43ef-9e2d-07f742c65b0b" name="Fork2" isLeaf="false">
+            <elementDefinition Id="01967058-1eb2-4a87-9133-b3828c3e2fca" />
+            <flowNodeTargets>
+              <controlFlow Id="eb773d74-eb01-4a11-bec2-0b883a5167d9" isLeaf="false">
+                <opaqueActionMoniker Id="750d25d6-db54-4b30-ad8c-3fef8584e030" LastKnownName="Menghitung ukuran file pesan teks/gambar" />
+                <elementDefinition Id="7d10bc49-d3a2-40ea-896b-fc03444a8a13" />
+              </controlFlow>
+              <controlFlow Id="2422e63b-c3cd-497d-a0ee-06f8cc3f8306" isLeaf="false">
+                <opaqueActionMoniker Id="659b0b59-7c4a-4dd4-bce7-a2dd72cadb01" LastKnownName="Menghitung ukuran file media penampung MP3" />
+                <elementDefinition Id="be7c6926-3731-4b66-a3c7-3844d78e32b4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="30443ab3-fb12-4619-8379-7f53e58e71e2" name="Cek validasi password" isLeaf="false">
+            <elementDefinition Id="eb13960e-ebe5-4c20-83ec-7ee362ac83bd" />
+            <flowNodeTargets>
+              <controlFlow Id="f12acb07-f689-4515-9d0e-017d12be66d3" isLeaf="false">
+                <joinNodeMoniker Id="a9be7a04-bb13-49ed-aa24-2c971441aebc" LastKnownName="Join2" />
+                <elementDefinition Id="122894b5-3d0f-4793-91cc-0c1aad5b6a24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="cf8137c5-295a-422a-a660-f9c2623f6d5c" name="Join3" isLeaf="false">
+            <elementDefinition Id="bfe17462-1243-4708-bb28-4ddfc1df81e1" />
+            <flowNodeTargets>
+              <controlFlow Id="2dda2dcc-6a5c-4a01-8709-6155dc7a6b17" isLeaf="false">
+                <joinNodeMoniker Id="a9be7a04-bb13-49ed-aa24-2c971441aebc" LastKnownName="Join2" />
+                <elementDefinition Id="c85e1f5a-55ac-45d7-b1ca-91eb04ee60a6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <forkNode Id="50baf3e1-439c-4c83-baaa-7e2085c89d77" name="Fork3" isLeaf="false">
+            <elementDefinition Id="38fb78af-7203-4b04-a204-c8b02a2430f8" />
+            <flowNodeTargets>
+              <controlFlow Id="3097c9e5-f73a-40f4-a3a0-d76f79504db1" isLeaf="false">
+                <opaqueActionMoniker Id="30443ab3-fb12-4619-8379-7f53e58e71e2" LastKnownName="Cek validasi password" />
+                <elementDefinition Id="95aab14d-58d6-40c4-a676-0b09ef835c46" />
+              </controlFlow>
+              <controlFlow Id="b4a44b98-7d97-4ff5-a86b-daff0fa1e3b5" isLeaf="false">
+                <opaqueActionMoniker Id="8b18f7e4-b66c-4ed8-b146-eacb2e24a3c1" LastKnownName="Cek validasi file pesan dan media" />
+                <elementDefinition Id="48b4e8b1-e897-467b-9aed-67629ae2bf2c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode Id="a9be7a04-bb13-49ed-aa24-2c971441aebc" name="Join2" isLeaf="false">
+            <elementDefinition Id="9c60f166-5226-47a6-9ea7-ac8ed9729c1f" />
+            <flowNodeTargets>
+              <controlFlow Id="eb26c903-bf2c-442b-bae5-e14b9833ab4d" isLeaf="false">
+                <decisionNodeMoniker Id="b460ad08-fefb-47cb-99af-6a2339f24f9b" LastKnownName="Decision2" />
+                <elementDefinition Id="9ff1417e-fbc7-4d3d-b9f3-203da3209327" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="b04d01a9-5855-45b1-b594-9c50bfaf6a82" name="Validasi" isLeaf="false">
+            <elementDefinition Id="332bc381-7b6c-4d50-8b12-9dfeb59ef73c" />
+            <flowNodeTargets>
+              <controlFlow Id="8c0c2ff0-39ea-4720-9263-9d748cff0eb9" isLeaf="false">
+                <forkNodeMoniker Id="50baf3e1-439c-4c83-baaa-7e2085c89d77" LastKnownName="Fork3" />
+                <elementDefinition Id="24d02257-1628-462b-a25b-87e3b1c2130e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b460ad08-fefb-47cb-99af-6a2339f24f9b" name="Decision2" isLeaf="false">
+            <elementDefinition Id="540cd5c4-3a48-403f-a356-b80c5f814695" />
+            <flowNodeTargets>
+              <controlFlow Id="f005cd12-8a55-47de-b4c3-b58212678291" guard="validasi gagal" isLeaf="false">
+                <opaqueActionMoniker Id="4b74fb2e-a805-4fb8-bf88-49cb98f91da3" LastKnownName="Mengulang tahap persiapan" />
+                <elementDefinition Id="4a766e74-6515-4ffe-ade0-b6310c01d8cb" />
+              </controlFlow>
+              <controlFlow Id="f071337a-6352-48de-b911-9a5ddd8dc98e" guard="valiasi berhasil" isLeaf="false">
+                <opaqueActionMoniker Id="01687793-70e4-4bbe-b1db-beffa8a17549" LastKnownName="Embedding data" />
+                <elementDefinition Id="0d7b3011-2710-42b7-9619-72d0072c2574" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="4b74fb2e-a805-4fb8-bf88-49cb98f91da3" name="Mengulang tahap persiapan" isLeaf="false">
+            <elementDefinition Id="b39def1c-b00d-4d19-a904-bba9781660c7" />
+            <flowNodeTargets>
+              <controlFlow Id="be5d1fb1-c84e-4617-a4f9-59ca13a7ae4d" isLeaf="false">
+                <opaqueActionMoniker Id="2bd56268-7eec-4195-93b9-cbe1db65d0c7" LastKnownName="Melakukan persiapan proses embedding data" />
+                <elementDefinition Id="d2e30537-a3fa-4a31-bcab-abee4d4a131c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="01687793-70e4-4bbe-b1db-beffa8a17549" name="Embedding data" isLeaf="false">
+            <elementDefinition Id="dfd18616-ee51-4337-8b3b-9ceb42122e5e" />
+            <flowNodeTargets>
+              <controlFlow Id="6de69648-b990-46dd-adf6-69d8820e6fb5" isLeaf="false">
+                <opaqueActionMoniker Id="a9f84b43-6d3b-4c32-99b5-1736769b7488" LastKnownName="Pesan berhasil di sisipkan menjadi stegofile" />
+                <elementDefinition Id="c50f4bc0-ed3c-400c-a5f4-31a28a659b26" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a9f84b43-6d3b-4c32-99b5-1736769b7488" name="Pesan berhasil di sisipkan menjadi stegofile" isLeaf="false">
+            <elementDefinition Id="f85fda51-7590-41de-8e99-609c192df58b" />
+            <flowNodeTargets>
+              <controlFlow Id="ad86f599-df74-452d-8d65-7f4129241af1" isLeaf="false">
+                <activityFinalNodeMoniker Id="f34cf7e0-f6f7-48a9-9910-4564ccdb561e" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="8929b5b5-aba7-438a-9901-cff68f89242f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="f34cf7e0-f6f7-48a9-9910-4564ccdb561e" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="d51f90b9-7a52-4ab1-b435-fae0c224a68c" />
+          </activityFinalNode>
+          <objectNode Id="fade9d89-acc2-49c4-913a-d1cfd432f14b" name="USER" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="6ab06391-b943-4852-8485-d4e865c32078" />
+            <upperBound>
+              <literalInteger Id="4c544053-75c3-41af-b827-244ca9b6e99d" name="2147483647" value="2147483647">
+                <elementDefinition Id="a307cede-37de-4269-9198-f90b1d0d6b4f" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="66a2016f-1eea-4a4d-baee-901b02e45891" name="SISTEM" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cdfbc34a-2f14-4aa3-8d15-bc462fef4b7e" />
+            <upperBound>
+              <literalInteger Id="7e441d41-5c31-4706-a279-897d570cbc8d" name="2147483647" value="2147483647">
+                <elementDefinition Id="32dbce67-d79a-485c-8f4f-8f24392ecee1" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="27f6a00d-3c4f-4f25-a70f-339d5b493191" name="UML Steganografi">
+    <elementDefinition Id="d7dcb18e-c6b1-4bc4-b890-fae8579c0bba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b9d9ae03-d1af-44c0-be2c-885963b61c70">
+        <profileInstance Id="00170536-367b-4b06-a88f-b9ce6e9f198e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1bb30abc-ba95-49e6-90bd-645a55a55a0d">
+        <profileInstance Id="eab716fb-70e4-4615-83c8-40ae5bd0d4b5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

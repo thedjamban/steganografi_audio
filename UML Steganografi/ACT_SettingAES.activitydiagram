@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="50d16eb5-01d8-4f3c-ba2f-05259dbbe8e4" name="Setting Algoritma AES" linkedPackageId="4ad42d5e-b037-41b8-8649-90decd595172" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="be180da9-c49f-430c-8a4b-0169d24b49a8" name="Setting Algoritma AES" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="25311d12-b49d-4831-9a5c-20fc8bb161ea" />
+        <nodes>
+          <opaqueAction Id="5cd4099e-9cad-45ea-8037-1e027055235c" name="Melakukan setting algoritma AES" isLeaf="false">
+            <elementDefinition Id="1632b2a7-9dff-488a-a002-a020ac72a4d1" />
+            <flowNodeTargets>
+              <controlFlow Id="f198a1e7-2109-4b3c-850c-c74595a03979" isLeaf="false">
+                <forkNodeMoniker Id="a4bb5344-1381-4b6d-92ce-223b5119b08f" LastKnownName="Fork4" />
+                <elementDefinition Id="ec0aac90-dc47-41ca-a5f1-2397661d44a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="a4bb5344-1381-4b6d-92ce-223b5119b08f" name="Fork4" isLeaf="false">
+            <elementDefinition Id="1d42c965-33a1-4b63-b55e-61e81b8bb177" />
+            <flowNodeTargets>
+              <controlFlow Id="6bb3eebd-aba1-42e9-aed5-e776758ae2b2" isLeaf="false">
+                <opaqueActionMoniker Id="20c3ef07-a4da-413b-a5d0-d248e73d52e4" LastKnownName="Menentukan tipe padding" />
+                <elementDefinition Id="99f01b34-5898-4f96-bb4c-6bc54726eaa4" />
+              </controlFlow>
+              <controlFlow Id="d947fc42-e614-48f4-a396-e0f808844099" isLeaf="false">
+                <opaqueActionMoniker Id="015f2f54-084e-477e-9eb4-e5db51a2d949" LastKnownName="Menentukan panjang kunci" />
+                <elementDefinition Id="222a69f4-5db5-44e2-a39d-f6775287a92f" />
+              </controlFlow>
+              <controlFlow Id="4acb74e6-2949-4bfd-80a1-9d15d79d56d5" isLeaf="false">
+                <opaqueActionMoniker Id="10a7030f-661d-4146-b345-d85cf48679e8" LastKnownName="Menentukan jenis enkripsi" />
+                <elementDefinition Id="e288f548-3598-4eb8-9991-b0b8e40506f7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="20c3ef07-a4da-413b-a5d0-d248e73d52e4" name="Menentukan tipe padding" isLeaf="false">
+            <elementDefinition Id="1c962ea2-1764-4f8c-af31-61f1e9bba93a" />
+            <flowNodeTargets>
+              <controlFlow Id="eec4a1c9-c08a-459c-bd5e-c563639b761b" isLeaf="false">
+                <joinNodeMoniker Id="77fa4b61-4951-4bf9-b71f-687f6f960a19" LastKnownName="Join4" />
+                <elementDefinition Id="52737085-f0fe-4032-ad1c-6d7cb0c2b652" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="015f2f54-084e-477e-9eb4-e5db51a2d949" name="Menentukan panjang kunci" isLeaf="false">
+            <elementDefinition Id="399fdc92-d516-4582-9d7f-335983f1023f" />
+            <flowNodeTargets>
+              <controlFlow Id="0e28574d-da26-4998-9cc7-738330fc82f5" isLeaf="false">
+                <joinNodeMoniker Id="77fa4b61-4951-4bf9-b71f-687f6f960a19" LastKnownName="Join4" />
+                <elementDefinition Id="e417bbbb-7c03-47ad-8aec-f7b04442c11d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="10a7030f-661d-4146-b345-d85cf48679e8" name="Menentukan jenis enkripsi" isLeaf="false">
+            <elementDefinition Id="cadb6cc5-3ae2-4f9a-8ef3-88bb8982f8d0" />
+            <flowNodeTargets>
+              <controlFlow Id="3f576e6a-1735-4a53-b02b-c70060d61bff" isLeaf="false">
+                <joinNodeMoniker Id="77fa4b61-4951-4bf9-b71f-687f6f960a19" LastKnownName="Join4" />
+                <elementDefinition Id="b4302292-3ef6-4422-82d0-eba98b4d390c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="77fa4b61-4951-4bf9-b71f-687f6f960a19" name="Join4" isLeaf="false">
+            <elementDefinition Id="4115cdcc-2aad-42d0-8e1e-9d2b271dbde9" />
+            <flowNodeTargets>
+              <controlFlow Id="1e31b65a-e02e-4e8b-a1b7-2566a37d8327" isLeaf="false">
+                <opaqueActionMoniker Id="fd15834b-251f-430d-9ae7-66106c49cfc4" LastKnownName="Menekan tombol OK" />
+                <elementDefinition Id="5b984574-6e3d-4992-a916-5763375640e6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="8cd68e30-841a-4e63-b2d5-eca2c48a89a2" name="Restart program" isLeaf="false">
+            <elementDefinition Id="45069fe1-c3e1-44f7-ba61-333d977211f9" />
+            <flowNodeTargets>
+              <controlFlow Id="fe861cd4-ac26-4ad9-80b2-801f447e3af5" isLeaf="false">
+                <activityFinalNodeMoniker Id="e37037d2-ce0e-4377-a8c5-c481929bb997" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="26f25aa8-3b13-45f5-ba90-466eaaecd71f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e37037d2-ce0e-4377-a8c5-c481929bb997" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a1bf65cc-9a19-415b-8789-42aa1d534295" />
+          </activityFinalNode>
+          <initialNode Id="eadec666-72a5-4d51-bc6e-d62d22bd8dde" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0209f585-5145-41bf-8c3c-46fc3dd7cd94" />
+            <flowNodeTargets>
+              <controlFlow Id="3bbdb14b-17f0-4dc3-a205-c99733c1106a" isLeaf="false">
+                <opaqueActionMoniker Id="5cd4099e-9cad-45ea-8037-1e027055235c" LastKnownName="Melakukan setting algoritma AES" />
+                <elementDefinition Id="c845e897-d4c6-4408-81b0-0601328347aa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="88d87198-5ab6-486c-8346-11b535361d77" name="Setting algoritma berhasil" isLeaf="false">
+            <elementDefinition Id="cf2e3aa4-4cb2-43c3-86ca-73bf89323751" />
+            <flowNodeTargets>
+              <controlFlow Id="73582a1d-131a-4fc6-bf77-66163da628a1" isLeaf="false">
+                <opaqueActionMoniker Id="8cd68e30-841a-4e63-b2d5-eca2c48a89a2" LastKnownName="Restart program" />
+                <elementDefinition Id="3ff8baca-e642-4ae9-b522-8527defec221" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fd15834b-251f-430d-9ae7-66106c49cfc4" name="Menekan tombol OK" isLeaf="false">
+            <elementDefinition Id="aced5260-0e8e-4d31-bb74-136e1f5d266b" />
+            <flowNodeTargets>
+              <controlFlow Id="0cc8798d-9b66-4daf-95ee-c2590a1419a2" isLeaf="false">
+                <opaqueActionMoniker Id="90576531-6f72-43db-b4ce-bed053edb526" LastKnownName="Menyimpan pengaturan algoritma AES" />
+                <elementDefinition Id="4804746f-d81a-46bd-9490-229c850890d2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="77df6ddc-4105-4c54-8a2c-de820bdae339" name="USER" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="c4707419-7d9f-4795-9210-872e836019b1" />
+            <upperBound>
+              <literalInteger Id="095967fe-1147-4db9-8344-07b0838ee7db" name="2147483647" value="2147483647">
+                <elementDefinition Id="1144bda3-5bf6-4186-a8b8-97566b4be5f4" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="50650655-c95c-498b-b0cb-225f2105e55f" name="SISTEM" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="74552596-8b83-4276-a231-bc5f1223e54b" />
+            <upperBound>
+              <literalInteger Id="8909ebfc-ad38-4e23-a009-9e8637efca68" name="2147483647" value="2147483647">
+                <elementDefinition Id="9720d962-438d-446c-9edf-823c26781d36" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="90576531-6f72-43db-b4ce-bed053edb526" name="Menyimpan pengaturan algoritma AES" isLeaf="false">
+            <elementDefinition Id="f5fc6b71-6fd6-4102-ade9-fdd02f5b6dfe" />
+            <flowNodeTargets>
+              <controlFlow Id="775bf940-b013-42af-980f-a585b94b3fb0" isLeaf="false">
+                <opaqueActionMoniker Id="88d87198-5ab6-486c-8346-11b535361d77" LastKnownName="Setting algoritma berhasil" />
+                <elementDefinition Id="1755bb66-e40b-4d50-98dc-476131e502e4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="4ad42d5e-b037-41b8-8649-90decd595172" name="UML Steganografi">
+    <elementDefinition Id="d7dcb18e-c6b1-4bc4-b890-fae8579c0bba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a7682084-1b7a-46d1-949d-1d51a7652324">
+        <profileInstance Id="b7b87208-b992-4899-8519-96229638f1b1" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="97d6abb2-533f-432a-a964-f40f6a262013">
+        <profileInstance Id="87aefa8b-8ede-41f1-8a50-18639c6b0e39" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

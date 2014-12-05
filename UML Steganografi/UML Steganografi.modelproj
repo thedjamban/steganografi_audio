@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5c1a11cb-cea7-4a79-a583-7b62bfaef208}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>UML Steganografi</Name>
+    <RootNamespace>UML Steganografi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="ACT_Embedding.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ACT_Embedding.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ACT_Embedding.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ACT_Extraction.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ACT_Extraction.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ACT_Extraction.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="SQ_Embedding.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQ_Embedding.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQ_Embedding.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SQ_Extraction.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQ_Extraction.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQ_Extraction.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SQ_SettingAES.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQ_SettingAES.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQ_SettingAES.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="CD_Stegano.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD_Stegano.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD_Stegano.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UC_Extraction.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC_Extraction.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UC_Extraction.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ACT_SettingAES.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ACT_SettingAES.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ACT_SettingAES.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UC_Embedding.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC_Embedding.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UC_Embedding.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\UML Steganografi.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

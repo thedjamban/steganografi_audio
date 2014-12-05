@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="d3f34117-1d63-44c5-9fd3-61a498780ed1" name="Extraction" linkedPackageId="736bfa04-7220-416e-9abd-56cc2787189f" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ab279128-5ae4-4015-bdcf-d8c4a3fb9fea" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4df73cf-f893-4100-9dca-8835f8acb452" />
+        <targetEnds>
+          <association Id="7bf61470-e534-4773-94d2-4d555e8162a0" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Melakukan setting algoritma AES" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1333432-089b-405d-8250-7562f57441b0" LastKnownName="Melakukan setting algoritma AES" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="862e90bb-cb5a-412e-9710-e4b90d2591bb" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8988271d-73b8-4771-a949-e7dc5a849dc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b26785f7-1a37-4840-bbcf-900cbf70cf09" name="Melakukan setting algoritma AES" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f18b925e-fddf-4466-82a1-9d248560f537" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="58dfe967-e7be-41ec-bbec-9ffba10df737" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ed0e70c3-1c2c-4f10-ab55-4f4d87f0966e" name="Melakukan proses ekstraksi data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50724b2b-b637-4f09-837c-73879ee1e5db" />
+        <targetEnds>
+          <association Id="125036ea-0944-46c1-ad08-12dc3997b354" isDerived="false" sourceEndRoleName="Melakukan proses ekstraksi data" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ab279128-5ae4-4015-bdcf-d8c4a3fb9fea" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5f137db-988f-4515-9099-ce2414b444f9" name="Melakukan proses ekstraksi data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f42e6894-4e45-4717-88f6-d0efac646948" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e314c19-6dd0-496c-9756-ae569cc50289" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="edbad0b0-ee9d-495f-b630-92bf0d8da937" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6f54111a-e190-499f-9552-31e493518beb" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="ad20eef9-80eb-42f2-b6d6-388750da0580">
+            <useCaseMoniker Id="d44dad04-0cd8-4880-a65a-c5d267decfeb" LastKnownName="Cek validasi password" />
+            <elementDefinition Id="812ae616-00a2-4c7a-8a21-f6e1692cbe1c" />
+          </include>
+          <include Id="9b2132da-5a47-4cbd-b5d1-bd82d10d8eb5">
+            <useCaseMoniker Id="d7e51778-0807-4bcb-af5e-6a15649ea5c0" LastKnownName="Cek validasi steganofile" />
+            <elementDefinition Id="79ac31e6-dce8-40d4-a3c3-4918c3922c1c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c1333432-089b-405d-8250-7562f57441b0" name="Melakukan setting algoritma AES" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="461ddeb5-88e5-4cd9-8588-f492280132e7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3f78557b-973f-45c2-a319-d3d3cfb64e21" name="Menjalankan file steganofile MP3" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="303bf454-9e35-4bc4-9dfd-fce301f8d987" />
+        <targetEnds>
+          <association Id="bdc4e56e-bb49-4647-a626-db415d94a738" isDerived="false" sourceEndRoleName="Menjalankan file steganofile MP3" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ab279128-5ae4-4015-bdcf-d8c4a3fb9fea" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ca9b6f6-72f7-46a1-945f-08adc242c9f3" name="Menjalankan file steganofile MP3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="be6556ed-8b9a-4ce6-9966-cdf723cd7794" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cbc0b406-5919-4e66-8063-50576f39df13" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c563cfde-c9c2-4a85-82c6-030da4690fc6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="24574dc6-8457-433b-85de-985665c928b5" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d7e51778-0807-4bcb-af5e-6a15649ea5c0" name="Cek validasi steganofile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a44095cd-2bb3-4629-84e3-3f00280f97b1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d7f40a8c-04a4-4262-ad3b-2d238431ad61" name="Memilih lokasi destinasi pesan/gambar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2761fe81-8482-46c9-8cb3-25c01dd9b399" />
+        <generalsInternal>
+          <generalization Id="4e219a73-4fd1-4b39-912b-f546fca148fa" isSubstitutable="false">
+            <useCaseMoniker Id="ed0e70c3-1c2c-4f10-ab55-4f4d87f0966e" LastKnownName="Melakukan proses ekstraksi data" />
+            <elementDefinition Id="f1af910f-a39d-4fb5-bfd0-371bdd31a803" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="26e89bfb-c6a7-44c7-9bf5-befb2ecd8b2e" name="Memilih file stegofile MP3" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9357d74a-52c4-4ef9-a7f8-ad1779c1440f" />
+        <generalsInternal>
+          <generalization Id="7ddf628a-757d-461c-b6e9-359c89384f8c" isSubstitutable="false">
+            <useCaseMoniker Id="ed0e70c3-1c2c-4f10-ab55-4f4d87f0966e" LastKnownName="Melakukan proses ekstraksi data" />
+            <elementDefinition Id="8e037600-d4ff-42c0-ba6f-11033b310855" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d44dad04-0cd8-4880-a65a-c5d267decfeb" name="Cek validasi password" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0dadb5c1-bc9b-42f9-a364-483a03397368" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="084d42a3-0f4f-4105-8b33-581ce4dc5602" name="Membuka file pesan teks/gambar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b68db0af-d0d8-4778-a4e4-8c1fcffb0c68" />
+        <targetEnds>
+          <association Id="6334b1ad-e457-44ec-916d-38889a1c0f57" isDerived="false" sourceEndRoleName="Membuka file pesan teks/gambar" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ab279128-5ae4-4015-bdcf-d8c4a3fb9fea" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7dfc3348-60cb-4970-8d9c-7ce0f07facbb" name="Membuka file pesan teks/gambar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c9766870-03cf-4b64-841e-dbd1787bc2d4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67d2da8e-012a-4eb5-afb9-e76e8600d1ae" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e77e9588-cce8-497b-afe0-b39ce8bf2b9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4f967944-847d-4ae2-a1f8-5404d97825ac" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07ebdd9c-d922-42c9-b8f7-dc1d04728a59" name="Menentukan tipe  padding" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87a3cf51-fbb7-44f9-993c-bfeb5083b91f" />
+        <generalsInternal>
+          <generalization Id="7b0844ab-d4f3-4ff8-adb1-40e6d4d3f3e5" isSubstitutable="false">
+            <useCaseMoniker Id="c1333432-089b-405d-8250-7562f57441b0" LastKnownName="Melakukan setting algoritma AES" />
+            <elementDefinition Id="8f4752b6-3974-4df5-bfbc-f5ed3489c9bb" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="28a620b4-2193-4c56-aab3-d2a5dfd7dfd9" name="Menentukan panjang kunci" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c872f033-4ab8-4fea-9354-26601b2d0e7d" />
+        <generalsInternal>
+          <generalization Id="117676f1-691e-44be-8139-c74901a9ad6b" isSubstitutable="false">
+            <useCaseMoniker Id="c1333432-089b-405d-8250-7562f57441b0" LastKnownName="Melakukan setting algoritma AES" />
+            <elementDefinition Id="4d09f3e3-9ddc-463b-97f2-fe230b339a67" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="249948d3-42ad-4a53-b2a2-a0e4e8f533c1" name="Menentukan jenis dekripsi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a60b230-398e-403f-a73a-9cf9f0633670" />
+        <generalsInternal>
+          <generalization Id="1cbb561e-f4d7-4662-bbb5-0ecc9ed6fb80" isSubstitutable="false">
+            <useCaseMoniker Id="c1333432-089b-405d-8250-7562f57441b0" LastKnownName="Melakukan setting algoritma AES" />
+            <elementDefinition Id="0a8c4e2a-eabc-4684-ac01-890d16291999" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="602f69e1-ba14-450a-80aa-510686d90f9f" name="Memilih jenis pesan berupa gambar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d1206d2-8112-446d-82a2-6694e33e9ae8" />
+        <extendedCases>
+          <extend Id="e1977a55-a979-411b-a00f-7f3020b89d56">
+            <useCaseMoniker Id="ed0e70c3-1c2c-4f10-ab55-4f4d87f0966e" LastKnownName="Melakukan proses ekstraksi data" />
+            <elementDefinition Id="fff021a2-66e3-4bf3-9789-6618fd3ffeed" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4260d101-5f7a-47d6-bd8f-3c1a657f5adb" name="Memasukkan password" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0066790-6c07-4e87-b1de-4e0498490e03" />
+        <generalsInternal>
+          <generalization Id="658bc21e-106d-4181-910c-a6de36a49027" isSubstitutable="false">
+            <useCaseMoniker Id="ed0e70c3-1c2c-4f10-ab55-4f4d87f0966e" LastKnownName="Melakukan proses ekstraksi data" />
+            <elementDefinition Id="52f29cf5-66ca-4b9d-8669-04fde073fd29" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="800ff5b6-9510-47a5-933c-475072cbb13b" name="Menentukan secret key" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b221f337-bf6b-47a1-a4a6-e2d4361ede14" />
+        <generalsInternal>
+          <generalization Id="7f9ce3ba-8fea-4a59-b29e-732228233336" isSubstitutable="false">
+            <useCaseMoniker Id="c1333432-089b-405d-8250-7562f57441b0" LastKnownName="Melakukan setting algoritma AES" />
+            <elementDefinition Id="7d7b7c3b-d3a9-4cde-bce0-c3bb13472f2d" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="736bfa04-7220-416e-9abd-56cc2787189f" name="UML Steganografi">
+    <elementDefinition Id="d7dcb18e-c6b1-4bc4-b890-fae8579c0bba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="42060258-480f-4eed-aad0-013cda584430">
+        <profileInstance Id="ee128e87-0276-4a0f-9bb6-5f5573603292" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="491f16b0-81f1-4cb1-a0b2-fdead35e28f0">
+        <profileInstance Id="1194b6b0-7de4-4631-8098-1fa72b5fd45e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

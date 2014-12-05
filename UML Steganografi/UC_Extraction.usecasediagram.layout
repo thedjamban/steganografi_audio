@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ExtractionUsecase">
+  <useCaseModelRootMoniker Id="d3f34117-1d63-44c5-9fd3-61a498780ed1" />
+  <nestedChildShapes>
+    <actorShape Id="faa97840-7513-4b08-b3ce-0d8a2e7c0fb1" absoluteBounds="4.25, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="ab279128-5ae4-4015-bdcf-d8c4a3fb9fea" LastKnownName="User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="ed03b76c-207d-4927-b511-5e253f0f066d" absoluteBounds="4.25, 1.875, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ed0e70c3-1c2c-4f10-ab55-4f4d87f0966e" LastKnownName="Melakukan proses ekstraksi data" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.84123555925075 : 2.37253713335521); (4.59722222222222 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="125036ea-0944-46c1-ad08-12dc3997b354" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+        <actorShapeMoniker Id="faa97840-7513-4b08-b3ce-0d8a2e7c0fb1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="46de5b92-5860-4122-9f52-18d129164f44" absoluteBounds="5.25, 3.625, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c1333432-089b-405d-8250-7562f57441b0" LastKnownName="Melakukan setting algoritma AES" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.75 : 3.35869565217391); (5.49643079966236 : 3.6832307824619)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7bf61470-e534-4773-94d2-4d555e8162a0" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="faa97840-7513-4b08-b3ce-0d8a2e7c0fb1" />
+        <useCaseShapeMoniker Id="46de5b92-5860-4122-9f52-18d129164f44" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="a943c1be-b190-42e7-821b-015e1cf7d729" absoluteBounds="2.75, 3.75, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3f78557b-973f-45c2-a319-d3d3cfb64e21" LastKnownName="Menjalankan file steganofile MP3" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.75234515540109 : 3.77775636089335); (4.25 : 3.42647058823529)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="bdc4e56e-bb49-4647-a626-db415d94a738" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="a943c1be-b190-42e7-821b-015e1cf7d729" />
+        <actorShapeMoniker Id="faa97840-7513-4b08-b3ce-0d8a2e7c0fb1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f1818971-48f5-42e9-8266-2695fde1953d" absoluteBounds="5.25, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d7e51778-0807-4bcb-af5e-6a15649ea5c0" LastKnownName="Cek validasi steganofile" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(5.18948560638796 : 1.89239790179573); (5.51185842572962 : 1.59482299163419)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="9b2132da-5a47-4cbd-b5d1-bd82d10d8eb5" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="4.75, 1.5625, 0.65625, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+        <useCaseShapeMoniker Id="f1818971-48f5-42e9-8266-2695fde1953d" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="c169769c-23f1-4123-af0e-d027493885a4" absoluteBounds="3.625, 0.75, 1.75, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d7f40a8c-04a4-4262-ad3b-2d238431ad61" LastKnownName="Memilih lokasi destinasi pesan/gambar" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(4.59662758531549 : 1.2484709336684); (4.84123555925075 : 1.87746286664479)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="4e219a73-4fd1-4b39-912b-f546fca148fa" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="c169769c-23f1-4123-af0e-d027493885a4" />
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="f2c15676-62c1-44c7-b7d8-6a04ffeb2ae5" absoluteBounds="2.625, 1.5, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="26e89bfb-c6a7-44c7-9bf5-befb2ecd8b2e" LastKnownName="Memilih file stegofile MP3" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(3.79634829757596 : 1.87141073279466); (4.35086873936428 : 1.99463749763651)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="7ddf628a-757d-461c-b6e9-359c89384f8c" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="f2c15676-62c1-44c7-b7d8-6a04ffeb2ae5" />
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="93ae6877-b8f1-46eb-b32c-b777e91164e3" absoluteBounds="6.25, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d44dad04-0cd8-4880-a65a-c5d267decfeb" LastKnownName="Cek validasi password" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(5.58031079934348 : 2.03633644146987); (6.26800369089696 : 1.94148224953145)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="ad20eef9-80eb-42f2-b6d6-388750da0580" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="5.4375, 1.8125, 0.680705531732988, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+        <useCaseShapeMoniker Id="93ae6877-b8f1-46eb-b32c-b777e91164e3" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="7982fabe-7c20-4ecb-bd11-b80d87c3ba7c" absoluteBounds="2.375, 3.125, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="084d42a3-0f4f-4105-8b33-581ce4dc5602" LastKnownName="Membuka file pesan teks/gambar" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.8485728659283 : 3.30922064855197); (4.25 : 3.27272727272727)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6334b1ad-e457-44ec-916d-38889a1c0f57" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="7982fabe-7c20-4ecb-bd11-b80d87c3ba7c" />
+        <actorShapeMoniker Id="faa97840-7513-4b08-b3ce-0d8a2e7c0fb1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="6ccbb68c-e6f0-4fe8-9c49-3e840846a852" absoluteBounds="6.875, 3.125, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="07ebdd9c-d922-42c9-b8f7-dc1d04728a59" LastKnownName="Menentukan tipe  padding" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(6.9875 : 3.525); (6.44429347138801 : 3.70606884287066)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="7b0844ab-d4f3-4ff8-adb1-40e6d4d3f3e5" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="6ccbb68c-e6f0-4fe8-9c49-3e840846a852" />
+        <useCaseShapeMoniker Id="46de5b92-5860-4122-9f52-18d129164f44" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="21b399c7-4061-4686-842c-41e9a39eeba4" absoluteBounds="7, 3.75, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="28a620b4-2193-4c56-aab3-d2a5dfd7dfd9" LastKnownName="Menentukan panjang kunci" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(7.01044874688471 : 3.95447768495442); (6.61116512723676 : 3.92490112053606)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="117676f1-691e-44be-8139-c74901a9ad6b" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="21b399c7-4061-4686-842c-41e9a39eeba4" />
+        <useCaseShapeMoniker Id="46de5b92-5860-4122-9f52-18d129164f44" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="839efbba-9eb6-470b-be1c-ea1678f4d1cb" absoluteBounds="6.125, 4.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="249948d3-42ad-4a53-b2a2-a0e4e8f533c1" LastKnownName="Menentukan jenis dekripsi" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(6.41667264475339 : 4.39773379427643); (6.15490658913658 : 4.11217082451263)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="1cbb561e-f4d7-4662-bbb5-0ecc9ed6fb80" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="839efbba-9eb6-470b-be1c-ea1678f4d1cb" />
+        <useCaseShapeMoniker Id="46de5b92-5860-4122-9f52-18d129164f44" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="3709b418-fa8e-4b2b-bf8f-99faae0202c4" absoluteBounds="5.875, 2.375, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="602f69e1-ba14-450a-80aa-510686d90f9f" LastKnownName="Memilih jenis pesan berupa gambar" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.06444301098726 : 2.45890904029252); (5.47047405254314 : 2.28291823779056)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="e1977a55-a979-411b-a00f-7f3020b89d56" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="5.5625, 2.1875, 0.75446819623835726, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="3709b418-fa8e-4b2b-bf8f-99faae0202c4" />
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="418c0498-5e28-42af-bda1-810391cb8b78" absoluteBounds="2.625, 2.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4260d101-5f7a-47d6-bd8f-3c1a657f5adb" LastKnownName="Memasukkan password" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(3.60699630910304 : 2.30851775046855); (4.29468920065652 : 2.21366355853013)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="658bc21e-106d-4181-910c-a6de36a49027" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="418c0498-5e28-42af-bda1-810391cb8b78" />
+        <useCaseShapeMoniker Id="ed03b76c-207d-4927-b511-5e253f0f066d" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="b3373596-b248-4c05-ae62-db1a3bfd3e1b" absoluteBounds="5, 4.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="800ff5b6-9510-47a5-933c-475072cbb13b" LastKnownName="Menentukan secret key" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(5.62126781251817 : 4.50746437496367); (5.81451626123751 : 4.12096747752498)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="7f9ce3ba-8fea-4a59-b29e-732228233336" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="b3373596-b248-4c05-ae62-db1a3bfd3e1b" />
+        <useCaseShapeMoniker Id="46de5b92-5860-4122-9f52-18d129164f44" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
